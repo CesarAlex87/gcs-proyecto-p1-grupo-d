@@ -1,0 +1,75 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.12, pytest-7.4.3, pluggy-1.6.0 -- /usr/bin/python3
+cachedir: .pytest_cache
+rootdir: /mnt/d/University/GCS-Proyecto-P1
+plugins: anyio-4.13.0, cov-4.1.0
+collecting ... collected 56 items
+
+tests/test_calculator.py::TestSuma::test_sumar_positivos PASSED          [  1%]
+tests/test_calculator.py::TestSuma::test_sumar_negativos PASSED          [  3%]
+tests/test_calculator.py::TestSuma::test_sumar_mixtos PASSED             [  5%]
+tests/test_calculator.py::TestSuma::test_sumar_con_cero PASSED           [  7%]
+tests/test_calculator.py::TestSuma::test_sumar_ambos_cero PASSED         [  8%]
+tests/test_calculator.py::TestSuma::test_sumar_decimales PASSED          [ 10%]
+tests/test_calculator.py::TestResta::test_restar_positivos PASSED        [ 12%]
+tests/test_calculator.py::TestResta::test_restar_resultado_negativo PASSED [ 14%]
+tests/test_calculator.py::TestResta::test_restar_negativos PASSED        [ 16%]
+tests/test_calculator.py::TestResta::test_restar_con_cero PASSED         [ 17%]
+tests/test_calculator.py::TestResta::test_restar_mismo_numero PASSED     [ 19%]
+tests/test_calculator.py::TestResta::test_restar_decimales PASSED        [ 21%]
+tests/test_calculator.py::TestMultiplicacion::test_multiplicar_positivos PASSED [ 23%]
+tests/test_calculator.py::TestMultiplicacion::test_multiplicar_negativos PASSED [ 25%]
+tests/test_calculator.py::TestMultiplicacion::test_multiplicar_mixtos PASSED [ 26%]
+tests/test_calculator.py::TestMultiplicacion::test_multiplicar_por_cero PASSED [ 28%]
+tests/test_calculator.py::TestMultiplicacion::test_multiplicar_por_uno PASSED [ 30%]
+tests/test_calculator.py::TestMultiplicacion::test_multiplicar_decimales PASSED [ 32%]
+tests/test_calculator.py::TestMultiplicacion::test_multiplicar_fracciones PASSED [ 33%]
+tests/test_calculator.py::TestDivision::test_dividir_positivos PASSED    [ 35%]
+tests/test_calculator.py::TestDivision::test_dividir_resultado_decimal PASSED [ 37%]
+tests/test_calculator.py::TestDivision::test_dividir_negativos PASSED    [ 39%]
+tests/test_calculator.py::TestDivision::test_dividir_mixtos PASSED       [ 41%]
+tests/test_calculator.py::TestDivision::test_dividir_por_cero PASSED     [ 42%]
+tests/test_calculator.py::TestDivision::test_dividir_cero_por_numero PASSED [ 44%]
+tests/test_calculator.py::TestDivision::test_dividir_por_uno PASSED      [ 46%]
+tests/test_calculator.py::TestDivision::test_dividir_entre_mismo_numero PASSED [ 48%]
+tests/test_calculator.py::TestDivision::test_dividir_decimales PASSED    [ 50%]
+tests/test_calculator.py::TestDivision::test_mensaje_error_division_cero PASSED [ 51%]
+tests/test_calculator.py::TestCasosExtremos::test_numeros_muy_grandes PASSED [ 53%]
+tests/test_calculator.py::TestCasosExtremos::test_numeros_muy_pequenos PASSED [ 55%]
+tests/test_calculator.py::TestCasosExtremos::test_precision_flotante PASSED [ 57%]
+tests/test_main.py::TestEndpointRaiz::test_get_raiz PASSED               [ 58%]
+tests/test_main.py::TestEndpointRaiz::test_raiz_contiene_endpoints PASSED [ 60%]
+tests/test_main.py::TestHealthCheck::test_get_health PASSED              [ 62%]
+tests/test_main.py::TestHealthCheck::test_health_contiene_version PASSED [ 64%]
+tests/test_main.py::TestCalculadoraSuma::test_suma_valida PASSED         [ 66%]
+tests/test_main.py::TestCalculadoraSuma::test_suma_decimales PASSED      [ 67%]
+tests/test_main.py::TestCalculadoraSuma::test_suma_negativos PASSED      [ 69%]
+tests/test_main.py::TestCalculadoraSuma::test_suma_sin_parametros PASSED [ 71%]
+tests/test_main.py::TestCalculadoraSuma::test_suma_parametro_faltante PASSED [ 73%]
+tests/test_main.py::TestCalculadoraResta::test_resta_valida PASSED       [ 75%]
+tests/test_main.py::TestCalculadoraResta::test_resta_resultado_negativo PASSED [ 76%]
+tests/test_main.py::TestCalculadoraMultiplicacion::test_multiplicacion_valida PASSED [ 78%]
+tests/test_main.py::TestCalculadoraMultiplicacion::test_multiplicacion_por_cero PASSED [ 80%]
+tests/test_main.py::TestCalculadoraDivision::test_division_valida PASSED [ 82%]
+tests/test_main.py::TestCalculadoraDivision::test_division_por_cero PASSED [ 83%]
+tests/test_main.py::TestCalculadoraDivision::test_division_resultado_decimal PASSED [ 85%]
+tests/test_main.py::TestCalculadoraDivision::test_division_cero_dividendo PASSED [ 87%]
+tests/test_main.py::TestEstudiantes::test_get_estudiantes PASSED         [ 89%]
+tests/test_main.py::TestEstudiantes::test_cantidad_estudiantes PASSED    [ 91%]
+tests/test_main.py::TestEstudiantes::test_estructura_estudiante PASSED   [ 92%]
+tests/test_main.py::TestErrorHandling::test_endpoint_no_existe PASSED    [ 94%]
+tests/test_main.py::TestErrorHandling::test_suma_parametros_invalidos PASSED [ 96%]
+tests/test_main.py::TestMetodosHTTP::test_post_health PASSED             [ 98%]
+tests/test_main.py::TestMetodosHTTP::test_put_suma PASSED                [100%]
+
+---------- coverage: platform linux, python 3.10.12-final-0 ----------
+Name                Stmts   Miss  Cover   Missing
+-------------------------------------------------
+app/__init__.py         0      0   100%
+app/calculator.py      13      0   100%
+app/main.py            70     13    81%   120-121, 143, 154-155, 177, 188-189, 216, 231-232, 282, 290
+-------------------------------------------------
+TOTAL                  83     13    84%
+
+
+============================== 56 passed in 0.82s ==============================

@@ -1,0 +1,13 @@
+{
+  "name": "jenkins-screenshots",
+  "version": "1.0.0",
+  "description": "Playwright automation scripts for capturing Jenkins UI screenshots",
+  "scripts": {
+    "capture": "node capture-jenkins.js",
+    "capture-pipeline": "node capture-pipeline.js",
+    "capture-webhook": "node capture-webhook.js"
+  },
+  "dependencies": {
+    "playwright": "^1.60.0"
+  }
+}
