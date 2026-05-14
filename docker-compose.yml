@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  # Servicio de la aplicación Flask
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: gcs-proyecto-p1-app
+    ports:
+      - "5000:5000"
+    environment:
+      - FLASK_ENV=production
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+    networks:
+      - gcs-network
+
+networks:
+  gcs-network:
+    driver: bridge
