@@ -7,7 +7,7 @@ Esta aplicación demuestra un pipeline CI/CD con Jenkins,
 incluyendo pruebas unitarias, integración, y despliegue en Docker.
 """
 
-from typing import Dict, Any, Union, Tuple
+from typing import Dict, Any, Tuple
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 
